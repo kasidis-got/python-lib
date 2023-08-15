@@ -51,13 +51,6 @@ smtp_details = {
     'use_tls': True  # Set this to False if you don't want to use starttls
 }
 
-# smtp_details = {
-#     'email': 'gotnotify@got.co.th',
-#     'password': 'fnGh%LS*F9F9QH',
-#     'server': 'smtp.office365.com',
-#     'port': 587,   # Often 587 for TLS or 465 for SSL
-#     'use_tls': True  # Set this to False if you don't want to use starttls
-# }
 
 # Example usage:
 send_email_with_attachments("Result Files Attached", "Please find the attached CSV files.", "{{RECEIVER}}", file_paths, smtp_details)
