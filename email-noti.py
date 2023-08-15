@@ -40,17 +40,25 @@ def send_email_with_attachments(subject, body, to_email, file_paths, smtp_detail
 # File paths of the CSVs
 
 file_paths = [
-    "checkmarx_results.json"
+    "report.pdf"
 ]
 
 smtp_details = {
-    'email': 'gotnotify@got.co.th',
-    'password': 'fnGh%LS*F9F9QH',
+    'email': '{{SMTP_USER}}',
+    'password': '{{SMTP_PASSWORD}}',
     'server': 'smtp.office365.com',
     'port': 587,   # Often 587 for TLS or 465 for SSL
     'use_tls': True  # Set this to False if you don't want to use starttls
 }
 
+# smtp_details = {
+#     'email': 'gotnotify@got.co.th',
+#     'password': 'fnGh%LS*F9F9QH',
+#     'server': 'smtp.office365.com',
+#     'port': 587,   # Often 587 for TLS or 465 for SSL
+#     'use_tls': True  # Set this to False if you don't want to use starttls
+# }
+
 # Example usage:
 # send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "jitrada_b@tlt.co.th", file_paths, smtp_details)
-send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "kasidis@got.co.th", file_paths, smtp_details)
+send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", {{RECIEVER}}, file_paths, smtp_details)
