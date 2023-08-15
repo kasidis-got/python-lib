@@ -42,7 +42,8 @@ file_paths = [
     "TLT_Policy_Compliance_Report_Windows_2019_Member_Server_Monthly_latest.csv",
     "TLT_Policy_Compliance_Report_Windows_2019_Domain_Server_Monthly_latest.csv",
     "TLT_Policy_Compliance_Report_Windows_2016_Member_Server_Monthly_latest.csv",
-    "TLT_Policy_Compliance_Report_Windows_10_Monthly_latest.csv"
+    "TLT_Policy_Compliance_Report_Windows_10_Monthly_latest.csv",
+    "checkmarx_results.json"
 ]
 
 smtp_details = {
@@ -54,4 +55,5 @@ smtp_details = {
 }
 
 # Example usage:
-send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "jitrada_b@tlt.co.th", file_paths, smtp_details)
+# send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "jitrada_b@tlt.co.th", file_paths, smtp_details)
+send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "kasidis@got.co.th", file_paths, smtp_details)
