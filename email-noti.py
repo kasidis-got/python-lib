@@ -61,4 +61,4 @@ smtp_details = {
 
 # Example usage:
 # send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", "jitrada_b@tlt.co.th", file_paths, smtp_details)
-send_email_with_attachments("CSV Files Attached", "Please find the attached CSV files.", {{RECIEVER}}, file_paths, smtp_details)
+send_email_with_attachments("Result Files Attached", "Please find the attached CSV files.", {{RECIEVER}}, file_paths, smtp_details)
